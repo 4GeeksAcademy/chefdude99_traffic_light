@@ -2,18 +2,27 @@
     background-color: brown;
 }
 
+.Palito{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(150, 150, 150);
+    width: 20px;
+    height: 90px;
+}
+
 .Semaforo {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
     background-color: rgb(150, 150, 150);
-    margin-top: 50px;
     padding: 10px 0 10px 0;
     width: 130px;
     height: 300px;
     color: white;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 .RedLight {
@@ -40,7 +49,7 @@
 }
 
 .glow {
-    border-width: 5px;
-    border-style: solid;
-    border-color: rgb(232, 232, 126);
-  }
+    -webkit-box-shadow: 0px 0px 155px 67px rgba(252, 255, 46, 0.9);
+    -moz-box-shadow: 0px 0px 155px 67px rgba(252, 255, 46, 0.9);
+    box-shadow: 0px 0px 155px 67px rgba(252, 255, 46, 0.9);
+}

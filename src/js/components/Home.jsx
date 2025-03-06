@@ -4,30 +4,34 @@ import { useState } from "react";
 const Home = () => {
 	const [color, setColor] = useState(null);
 	return (
-		<div className="Semaforo container">
-			<div className="RedLight glow"
-			onClick={() => {
-				setColor("Red")
-			
-			}}
-			>
+		<>
+			<div className="Palito container">
 			</div>
-			<div className="YellowLight glow"
-			onClick={() => {
-				setColor("Yellow")
-			}}
-			>
-				
-			</div>
-			<div className="GreenLight glow"
-			onClick={() => {
-				setColor("Green")
-			}}
-			>
-				
-			</div>
+			<div className="Semaforo container">
+				<div className={`RedLight ${color == "Red" ? "glow" : null}`}
+					onClick={() => {
+						setColor("Red")
 
-		</div>
+					}}
+				>
+				</div>
+				<div className={`YellowLight ${color == "Yellow" ? "glow" : null}`}
+					onClick={() => {
+						setColor("Yellow")
+					}}
+				>
+
+				</div>
+				<div className={`GreenLight ${color == "Green" ? "glow" : null}`}
+					onClick={() => {
+						setColor("Green")
+					}}
+				>
+
+				</div>
+
+			</div>
+		</>
 	);
 };
 
