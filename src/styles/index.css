@@ -1,11 +1,46 @@
-/* 
+* {
+    background-color: brown;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.Semaforo {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(150, 150, 150);
+    margin-top: 50px;
+    padding: 10px 0 10px 0;
+    width: 130px;
+    height: 300px;
+    color: white;
+    border-radius: 5px;
+}
 
-*/
+.RedLight {
+    background-color: red;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+.YellowLight {
+    background-color: yellow;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+
+}
+
+.GreenLight {
+    background-color: green;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+
+}
+
+.glow {
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(232, 232, 126);
+  }
